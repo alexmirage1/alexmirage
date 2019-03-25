@@ -1,5 +1,5 @@
 body{
-	background-image:url(img/mountain_pink.jpg);
+	background-image:url(img/mountain_spring.jpg);
 	background-size:cover;
 	background-repeat: no-repeat; 
 	background-attachment: fixed;
@@ -8,6 +8,38 @@ body{
 @font-face{
 	font-family: Devil Breeze Bold;
 	src:url(fonts/Devil_Breeze_Bold.ttf);
+}
+
+#content_test{
+	text-align: center;
+	font-family: Devil Breeze Bold;
+	color: white;
+	line-height: 1.5;
+	font-size: 15px;
+	padding: 40px 0 0 0;
+}
+
+.a1::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background:#fff;
+	transition: width .4s;
+}
+
+.a1:hover::after{
+	width:100%;
+	transition: width .4s;	 
+}
+
+#nav {
+	padding: 0 0 0 500px;
+}
+
+li {
+	display: inline-block;
+	padding: 0 20px; 
 }
 
 .a1, #logo{
@@ -28,10 +60,6 @@ body{
 #span2{
 	margin-left: 31%;
 	word-spacing: 30px;
-}
-
-.a1:hover{
-	text-decoration-line:underline;  
 }
 
 #span1{
@@ -72,11 +100,11 @@ body{
 }
 
 .first_post{
-	background: rgb(255, 255, 255, 0.5); 
+	background: rgb(255, 255, 255, 0.3); 
 	color: white;
-	/*float: left;*/
+	float: right;
 	width: 400px;
-	margin: 250px 0 0 450px;
+	margin: 150px 150px 0 0;
 	padding: 5px;
 }
 
@@ -179,14 +207,8 @@ body{
 	font-size: 39px;
 }
 
-#content_test{
-	text-align: center;
-	font-family: Devil Breeze Bold;
-	color: white;
-	line-height: 1.5;
-	font-size: 15px;
-	padding: 40px 0 0 0;
-}
+
+
 /*p{
 	font-family: 'ZCOOL QingKe HuangYou', cursive;
 	font-size:20px;
