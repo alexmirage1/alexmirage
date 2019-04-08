@@ -1,8 +1,13 @@
 body{
-	background-image:url(img/mountain_spring.jpg);
+	background-image:url(img/mountain_pink.jpg);
 	background-size:cover;
 	background-repeat: no-repeat; 
 	background-attachment: fixed;
+}
+
+.row{
+	widsth: 1980px;
+	height: 2550px; 
 }
 
 @font-face{
@@ -22,19 +27,21 @@ body{
 .a1::after {
 	content: '';
 	display: block;
-	width: 0;
+	width: 0px;
 	height: 2px;
 	background:#fff;
 	transition: width .4s;
+	-webkit-transition: width .4s;
 }
 
 .a1:hover::after{
 	width:100%;
-	transition: width .4s;	 
+	transition: width .4s;
+	-webkit-transition: width .4s;
 }
 
 #nav {
-	padding: 0 0 0 400px;
+	padding: 0 0 0 450px;
 }
 
 li {
@@ -167,8 +174,9 @@ li {
 .winter_view{
 	margin-top: 200px;
 	margin-left: 210px;
+	/*float: left;*/
 	width: 200px;
-	height: 650px; 
+	height: 650px;
 }
 
 #winter_view_img{
@@ -207,8 +215,32 @@ li {
 	font-size: 39px;
 }
 
+.spring{
+	margin-top: 200px;
+	margin-left: 810px;
+	width: 800px;
+	height: 450px
+}
 
+#spring_span{
+	font-family: Devil Breeze Bold;
+	font-size: 25px;
+	color: white;
+	margin-left: 50px;
+}
 
+#date5{
+	font-family: Devil Breeze Bold;
+	color: white;
+	opacity: .5;
+	font-size: 10px;	
+}
+
+#spring_img{
+	width: 800px;
+	height: 450px;
+	border: 10px solid hsla(0, 0%, 110%, .5);
+}
 /*p{
 	font-family: 'ZCOOL QingKe HuangYou', cursive;
 	font-size:20px;
