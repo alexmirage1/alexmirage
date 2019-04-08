@@ -28,7 +28,7 @@ body{
 	content: '';
 	display: block;
 	width: 0px;
-	height: 2px;
+	height: 1em;
 	background:#fff;
 	transition: width .4s;
 	-webkit-transition: width .4s;
